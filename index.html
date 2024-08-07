@@ -11,6 +11,7 @@
     <!-- CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -42,16 +43,8 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">KolaborasiGroup</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-dark rounded-lg bg-primary-700 border-2 border-black 
-          hover:bg-primary-900 hover:shadow-2xl hover:border-primary-300 hover:text-dark 
-          transition-all duration-500 ease-in-out transform hover:scale-105 
-          focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Login
-                </a>
-
                 <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-auto min-w-max h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -61,40 +54,37 @@
                     </svg>
                 </button>
             </div>
+            <div class="hidden w-full md:flex md:w-auto md:order-1 ml-auto" id="navbar-sticky">
+                <div
+                    class="flex flex-col p-4 mt-4 rounded-lg bg-black-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                    <a href="https://kolaborasigroup.com/admin"
+                        class="inline-flex items-center justify-center px-3 py-2 sm:px-5 sm:py-2 text-sm sm:text-base font-medium text-center text-dark rounded-lg bg-transparent border-2 border-black hover:bg-gray-100 hover:shadow-2xl hover:border-primary-300 hover:text-dark transition-all duration-500 ease-in-out transform hover:scale-105 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 mt-2 md:mt-0 md:ml-auto">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Login
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
-
     <!-- end navbar -->
 
     <!-- Hero -->
-
-    <section class="bg-dark dark:bg-white-900 mt-16">
-        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <h1
-                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-dark">
-                    Kami adalah KolaborasiGroup</h1>
-                <p class="max-w-2xl mb-6 font-light text-dark-500 lg:mb-8 md:text-lg lg:text-xl dark:text-dark-400">
-                    dibawah ini merupan bagian dari bisnis kami </p>
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-dark rounded-lg bg-primary-700 border-2 border-black 
-          hover:bg-primary-900 hover:shadow-2xl hover:border-primary-300 hover:text-dark 
-          transition-all duration-500 ease-in-out transform hover:scale-105 
-          focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Get started
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="/images/kolaborasi1.png" alt="mockup">
+    <section class="bg-dark dark:bg-white-900 mt-20 sm:mt-30">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:py-16">
+            <div class="text-center">
+                <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-dark">
+                    Kami adalah
+                </h1>
+                <div class="flex justify-center mb-6">
+                    <img src="/images/kolaborasi1.png" alt="mockup" class="w-3/4 max-w-xs">
+                    <!-- Menyusutkan ukuran gambar -->
+                </div>
+                <p class="max-w-2xl mx-auto font-light text-dark-500 md:text-lg lg:text-xl dark:text-dark-400">
+                    dibawah ini merupakan bagian dari mitra bisnis kami
+                </p>
             </div>
         </div>
     </section>
-
     <!-- End Hero -->
 
     <!-- content -->
@@ -184,7 +174,7 @@
                 </a>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
                     href="https://flowbite.com/" class="hover:underline">KolaborasiGroup™</a>. All Rights
                 Reserved.</span>
         </div>
